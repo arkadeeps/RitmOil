@@ -1,5 +1,6 @@
 
 import React from 'react';
+import {Link} from 'react-router-dom';
 import ImageSlideshow from './ImageSlideshow';
 import { useLanguage } from '../contexts/LanguageContext';
 import { heroImgs } from '../img/heroImgs/heroImg'
@@ -30,18 +31,18 @@ const HeroSection = () => {
               {t('hero.subtitle') || 'Leading provider of comprehensive oil industry services across Kazakhstan'}
             </p>
             <div className="space-x-4 animate-fade-in">
-              <a
-                href="/about/mission"
+              <Link
+                to="/about/mission"
                 className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors"
               >
                 {t('common.learn_more') || 'Learn More'}
-              </a>
-              <a
-                href="/contacts"
+              </Link>
+              <Link
+                to="/contacts"
                 className="inline-block bg-transparent border-2 border-white hover:bg-white hover:text-gray-900 text-white px-8 py-3 rounded-lg font-semibold transition-colors"
               >
                 {t('common.contact_us') || 'Contact Us'}
-              </a>
+              </Link>
             </div>
           </div>
         </div>

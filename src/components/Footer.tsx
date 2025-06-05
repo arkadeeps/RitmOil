@@ -1,5 +1,6 @@
 
 import React from 'react';
+import {Link} from 'react-router-dom';
 import { Mail, Phone, MapPin } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 
@@ -59,14 +60,14 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">{t('footer.quick_links')}</h4>
             <div className="grid grid-cols-2 gap-2">
-              <a href="/about/mission" className="text-gray-400 hover:text-blue-400 transition-colors">{t('footer.links.mission')}</a>
-              <a href="/services/hotel" className="text-gray-400 hover:text-blue-400 transition-colors">{t('footer.links.hotel')}</a>
-              <a href="/about/history" className="text-gray-400 hover:text-blue-400 transition-colors">{t('footer.links.history')}</a>
-              <a href="/services/catering" className="text-gray-400 hover:text-blue-400 transition-colors">{t('footer.links.catering')}</a>
-              <a href="/about/management" className="text-gray-400 hover:text-blue-400 transition-colors">{t('footer.links.management')}</a>
-              <a href="/services/transport" className="text-gray-400 hover:text-blue-400 transition-colors">{t('footer.links.transport')}</a>
-              <a href="/clients" className="text-gray-400 hover:text-blue-400 transition-colors">{t('footer.links.clients')}</a>
-              <a href="/contacts" className="text-gray-400 hover:text-blue-400 transition-colors">{t('footer.links.contacts')}</a>
+              <Link to="/about/mission" className="text-gray-400 hover:text-blue-400 transition-colors">{t('footer.links.mission')}</Link>
+              <Link to="/services/hotel" className="text-gray-400 hover:text-blue-400 transition-colors">{t('footer.links.hotel')}</Link>
+              <Link to="/about/history" className="text-gray-400 hover:text-blue-400 transition-colors">{t('footer.links.history')}</Link>
+              <Link to="/services/catering" className="text-gray-400 hover:text-blue-400 transition-colors">{t('footer.links.catering')}</Link>
+              <Link to="/about/management" className="text-gray-400 hover:text-blue-400 transition-colors">{t('footer.links.management')}</Link>
+              <Link to="/services/transport" className="text-gray-400 hover:text-blue-400 transition-colors">{t('footer.links.transport')}</Link>
+              <Link to="/clients" className="text-gray-400 hover:text-blue-400 transition-colors">{t('footer.links.clients')}</Link>
+              <Link to="/contacts" className="text-gray-400 hover:text-blue-400 transition-colors">{t('footer.links.contacts')}</Link>
             </div>
           </div>
         </div>

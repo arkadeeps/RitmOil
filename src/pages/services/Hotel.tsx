@@ -1,5 +1,6 @@
 
 import React from 'react';
+import {Link} from 'react-router-dom';
 import Layout from '../../components/Layout';
 import ImageSlideshow from '../../components/ImageSlideshow';
 import { Bed, Wifi, Coffee, Music, MapPin } from 'lucide-react';
@@ -97,14 +98,14 @@ const Hotel = () => {
               <p className="text-lg text-gray-700 mb-6">
                 {t('hotel.booking.description')}
               </p>
-              <a
-                href="http://www.hotel-tengri.com/eng/book_now/"
+              <Link
+                to="http://www.hotel-tengri.com/eng/book_now/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block bg-amber-600 hover:bg-amber-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors"
               >
                 {t('hotel.booking.button')}
-              </a>
+              </Link>
             </div>
           </div>
         </div>
