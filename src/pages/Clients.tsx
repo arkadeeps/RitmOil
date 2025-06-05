@@ -4,6 +4,7 @@ import Layout from '../components/Layout';
 import ImageSlideshow from '../components/ImageSlideshow';
 import { useLanguage } from '../contexts/LanguageContext';
 import { heroImgs } from '../img/heroImgs/heroImg'
+import { clientImgs } from '../img/clients/clientlogo'
 
 const Clients = () => {
   const { t } = useLanguage();
@@ -11,41 +12,7 @@ const Clients = () => {
   const clientsImages = Object.values(heroImgs);
 
   // Major clients of Ritm Oil LLP with logos
-  const clients = [
-    { logo: "/src/img/clients/ncoc-logo.jpg" },
-    { logo: "/src/img/clients/parkerdrilling.jpg" },
-    { logo: "/src/img/clients/saipem.jpg" },
-    { logo: "/src/img/clients/ersai.jpg" },
-    { logo: "/src/img/clients/servicesinc.jpg" },
-    { logo: "/src/img/clients/royalwagenborg.jpg" },
-    { logo: "/src/img/clients/fmc.jpg" },
-    { logo: "/src/img/clients/petrofac.jpg" },
-    { logo: "/src/img/clients/weatherford.jpg" },
-    { logo: "/src/img/clients/bakerhughes.jpg" },
-    { logo: "/src/img/clients/imtechbolashak.jpg" },
-    { logo: "/src/img/clients/fircroft.jpg" },
-    { logo: "/src/img/clients/bonatti.jpg" },
-    { logo: "/src/img/clients/kss.jpg" },
-    { logo: "/src/img/clients/psnkazstroy.jpg" },
-    { logo: "/src/img/clients/pl.jpg" },
-    { logo: "/src/img/clients/kcadoitag.jpg" },
-    { logo: "/src/img/clients/worleyparsons.jpg" },
-    { logo: "/src/img/clients/jgc.jpg" },
-    { logo: "/src/img/clients/ccc.jpg" },
-    { logo: "/src/img/clients/languagelink.jpg" },
-    { logo: "/src/img/clients/bateman.jpg" },
-    { logo: "/src/img/clients/kentech.jpg" },
-    { logo: "/src/img/clients/agip.jpg" },
-    { logo: "/src/img/clients/cccompany.jpg" },
-    { logo: "/src/img/clients/kazmunai.jpg" },
-    { logo: "/src/img/clients/bureauveritas.jpg" },
-    { logo: "/src/img/clients/halliburton-logo.jpg" },
-    { logo: "/src/img/clients/isker-logo.jpg" },
-    { logo: "/src/img/clients/marubeni.jpg" },
-    { logo: "/src/img/clients/ndts.jpg" },
-    { logo: "/src/img/clients/sarensgroup.jpg" },
-    { logo: "/src/img/clients/gs.jpg" }
-  ];
+  const clients = Object.values(clientImgs).map(logo => ({ logo }));
 
   return (
     <Layout>

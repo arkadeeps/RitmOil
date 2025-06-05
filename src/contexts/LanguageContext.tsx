@@ -92,7 +92,7 @@ const translations = {
     'header.services.franchise': 'Franchise Agreement',
     'header.clients': 'Clients',
     'header.contacts': 'Contacts',
-    'img.logo' : '/src/img/logo_ritmoil_eng.png',
+    'img.logo' : 'eng',
     
     // Footer
     'footer.description': 'Leading provider of comprehensive oil industry services including hotel business, catering, transport logistics, and management solutions.',
@@ -413,7 +413,7 @@ const translations = {
     'header.services.franchise': 'Франчайзинговый договор',
     'header.clients': 'Клиенты',
     'header.contacts': 'Контакты',
-    'img.logo' : '/src/img/logo_ritmoil_rus.png',
+    'img.logo' : 'rus',
 
     // Footer
     'footer.description': 'Ведущий поставщик комплексных услуг в нефтяной отрасли: гостиничный бизнес, кейтеринг, транспортная логистика и управленческие решения.',
@@ -735,7 +735,7 @@ const translations = {
     'header.services.franchise': 'Франшиза келісімі',
     'header.clients': 'Клиенттер',
     'header.contacts': 'Байланыс',
-    'img.logo' : '/src/img/logo_ritmoil_kz.png',
+    'img.logo' : 'kaz',
 
     // Footer
     'footer.description': 'Мұнай өнеркәсібіне арналған кешенді қызметтердің жетекші жеткізушісі: қонақ үй бизнесі, тамақтандыру, көлік логистикасы және басқару шешімдері.',

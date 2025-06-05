@@ -4,6 +4,10 @@ import { Link, useLocation } from 'react-router-dom';
 import { ChevronDown, Menu, X } from 'lucide-react';
 import LanguageSelector from './LanguageSelector';
 import { useLanguage } from '../contexts/LanguageContext';
+import eng from '../img/logo_ritmoil_eng.png';
+import rus from '../img/logo_ritmoil_rus.png';
+import kaz from '../img/logo_ritmoil_kz.png';
+
 
 const Header = () => {
   const { t } = useLanguage();
@@ -44,7 +48,7 @@ const Header = () => {
           {/* Logo and Company Name */}
           <Link to="/" className="flex items-center space-x-3 h-20 w-50 hover:opacity-80 transition-opacity">
             <img 
-              src={t('img.logo')} 
+              src = {t('img.logo') === 'eng' ? eng : t('img.logo') === 'rus' ? rus : t('img.logo') === 'kaz' ? kaz : eng} 
               alt="Ritm Oil Logo"
               className="w-auto h-20 rounded-lg object-contain"
             />
